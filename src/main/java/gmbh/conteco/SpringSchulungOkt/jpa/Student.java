@@ -1,6 +1,8 @@
 package gmbh.conteco.SpringSchulungOkt.jpa;
 
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 import jakarta.persistence.Entity;
@@ -21,6 +23,9 @@ public class Student {
     @GeneratedValue
     Long id;
 
+    @NotBlank
     String name;
+
+    @Email
     String email;
 }
