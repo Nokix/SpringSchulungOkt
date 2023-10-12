@@ -15,6 +15,7 @@ import lombok.experimental.Accessors;
 @Builder
 @Accessors(chain = true)
 @Setter
+@Getter
 public class Student {
     @Id
     @GeneratedValue
